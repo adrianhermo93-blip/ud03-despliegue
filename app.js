@@ -1,6 +1,7 @@
 const express = require('express');
 
 function textoVisitas(n) {
+  if (n === 0) return 'ninguna visita';
   return n === 1 ? '1 visita' : `${n} visitas`;
 }
 
