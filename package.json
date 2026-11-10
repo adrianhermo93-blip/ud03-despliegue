@@ -1,0 +1,14 @@
+{
+  "name": "ud03-despliegue",
+  "version": "1.0.0",
+  "description": "Aplicación Node con PostgreSQL desplegada con Docker Compose y Apache como proxy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.3"
+  }
+}
