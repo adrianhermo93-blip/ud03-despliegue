@@ -5,6 +5,7 @@ const { crearApp, textoVisitas } = require('./app');
 test('textoVisitas usa singular y plural', () => {
   assert.strictEqual(textoVisitas(1), '1 visita');
   assert.strictEqual(textoVisitas(5), '5 visitas');
+  assert.strictEqual(textoVisitas(0), 'ninguna visita');
 });
 
 test('la portada responde 200 y suma la visita', async () => {
